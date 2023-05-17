@@ -116,7 +116,7 @@ class Trainer(object):
                                 global_step=self.step,
                                 ready_for_local_init_op=None)
 
-        gpu_options = tf.GPUOptions(allow_growth=True)
+        gpu_options = tf.compat.v1.GPUOptions(allow_growth=True)
         sess_config = tf.ConfigProto(allow_soft_placement=True,
                                     gpu_options=gpu_options)
 

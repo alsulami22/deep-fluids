@@ -117,7 +117,7 @@ class Trainer(object):
                                 ready_for_local_init_op=None)
 
         gpu_options = tf.GPUOptions(allow_growth=True)
-        sess_config = tf.ConfigProto(allow_soft_placement=True,
+        sess_config = tf.ConfigProto(allow_soft_placement=False,
                                     gpu_options=gpu_options)
 
         self.sess = sv.prepare_or_wait_for_session(config=sess_config)

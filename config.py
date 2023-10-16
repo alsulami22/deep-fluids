@@ -60,7 +60,7 @@ train_arg.add_argument('--lr_update', type=str, default='decay',
 misc_arg = add_argument_group('Misc')
 misc_arg.add_argument('--log_dir', type=str, default='log')
 misc_arg.add_argument('--tag', type=str, default='tag')
-misc_arg.add_argument('--data_dir', type=str, default='data')
+misc_arg.add_argument('--data_dir', type=str, default='../data')
 misc_arg.add_argument('--load_path', type=str, default='')
 misc_arg.add_argument('--code_path', type=str, default='')
 misc_arg.add_argument('--log_step', type=int, default=100)
